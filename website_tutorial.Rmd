@@ -45,6 +45,7 @@ The following video is a recording from the workshop I hosted on May 3rd, 2023 f
 ___
 
 ## Step 1: Deploy website
+___
 
 
 ### 1.1 Clone the template
@@ -105,6 +106,7 @@ knitr::include_graphics("./images/04.png")
 ___
 
 ## Step 2: Making modifications
+___
 
 ### 2.1 Linking GitHub and RStudio
 
@@ -177,16 +179,19 @@ We will use Markdown and R to modify our html pages; each html has an associated
     - Connect the other tab to your resume
     - Save the _site.yml file
     - Re-create all the html files
-    
-> IMPORTANT:
-
-> Make sure you run `rmarkdown::render_site()` everytime you make any changes to any of the files.
 
 3. Check a local copy of the website to make sure everything looks good
+
+### 2.3 Render website
+
+> VERY IMPORTANT!!!
+
+Make sure you run `rmarkdown::render_site()` everytime you make any changes to any of the files.
 
 ___
 
 ## Step 3: Updating website
+___
 
 - Go to GitHub Desktop on your computer, and select `Current Repository` (top-left corner) to `your_repository_name` (for me, it's called `homepage`)
 - Select all the changes that you want to push, and write a brief `Summary` (required) of what the changes were. For example, since we added a new page, we can write, `added a new webpage`. You can provide more detailed description of the changes in the field below that says `Description`.
