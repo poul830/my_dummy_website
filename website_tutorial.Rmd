@@ -177,6 +177,10 @@ We will use Markdown and R to modify our html pages; each html has an associated
     - Connect the other tab to your resume
     - Save the _site.yml file
     - Re-create all the html files
+    
+> IMPORTANT:
+
+> Make sure you run `rmarkdown::render_site()` everytime you make any changes to any of the files.
 
 3. Check a local copy of the website to make sure everything looks good
 

@@ -20,6 +20,8 @@ navbar:
   - text: Research
     href: research.html
     icon: fa-flask
+  - text: Website Tutorial
+    href: website_tutorial.html
   # - text: Resume
   #   href: "./resume/resume_john_doe.pdf"
   #   icon: fa-id-card
@@ -28,7 +30,6 @@ navbar:
     href: https://twitter.com/another_ant_guy
     align: right
   - { icon: "fa-linkedin", href: "https://www.linkedin.com/in/biplabendu/", align: right }
-  - { icon: "fa-facebook", href: "https://www.facebook.com/biplabendu", align: right }
 
 
 # Resources:
