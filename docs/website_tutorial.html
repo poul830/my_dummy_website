@@ -17,7 +17,7 @@
 <script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -364,7 +364,7 @@ div.tocify {
 <h1 class="title toc-ignore">A tutorial for building and deploying
 websites using RMarkdown and GitHub</h1>
 <h4 class="author">Biplabendu Das</h4>
-<h4 class="date">05 April, 2024</h4>
+<h4 class="date">06 April, 2024</h4>
 
 </div>
 
@@ -656,6 +656,50 @@ following manual:</p>
 href="https://bookdown.org/yihui/rmarkdown/html-document.html#table-of-contents"
 class="uri">https://bookdown.org/yihui/rmarkdown/html-document.html#table-of-contents</a></p>
 </blockquote>
+</div>
+<div id="random-features" class="section level2">
+<h2>Random features</h2>
+<div id="customizing-font-size-and-style" class="section level3">
+<h3>Customizing font size and style</h3>
+<hr />
+<blockquote>
+<p>Option 1: write HTML code</p>
+</blockquote>
+`
+<h3 style="font-size:30px; color:red;">
+I am a colored header text (h3).
+</h3>
+<p style="
+    font-size:18px; 
+    font-family:&#39;Papyrus&#39;;
+    text-align:center;">
+I am a body text.<br />
+But, I am centered text of a different font family and bigger size.
+</p>
+<hr />
+<blockquote>
+<p>Option 2: use a style.css file</p>
+</blockquote>
+<pre class="r"><code>/* Whole document: */
+body {
+  font-family: Helvetica;
+  font-size: 16pt;
+}
+
+/* Headers */
+h3 {
+  font-size: 24pt;
+  color: maroon;
+}</code></pre>
+</div>
+<div id="allow-users-to-leave-commentsannotations"
+class="section level3">
+<h3>Allow users to leave comments/annotations</h3>
+<pre class="r"><code>## Hypothesis annotations
+# Latest development version
+remotes::install_github(&quot;r-world-devs/hypothesis&quot;)
+hypothesis::useHypothesis()</code></pre>
+</div>
 </div>
 
 

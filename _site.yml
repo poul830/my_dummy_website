@@ -4,11 +4,9 @@ output_dir: docs
 output:
   html_document:
     # css: assets/style.css
-    # remote_theme: "mmistakes/minimal-mistakes"
-    # lib_dir: site_libs
     self_contained: yes
     keep_md: no
-    theme: yeti
+    theme: flatly
     toc: yes
     toc_depth: 3
     toc_float: yes
@@ -30,7 +28,11 @@ navbar:
   - icon: fa-twitter
     href: https://twitter.com/another_ant_guy
     align: right
-  - { icon: "fa-linkedin", href: "https://www.linkedin.com/in/biplabendu/", align: right }
+  - { 
+      icon: "fa-linkedin", 
+      href: "https://www.linkedin.com/in/biplabendu/", 
+      align: right
+    }
 
 
 # Resources:

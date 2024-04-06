@@ -219,3 +219,52 @@ For more inspiration on customizing the html output, refer to the following manu
 
 > https://bookdown.org/yihui/rmarkdown/html-document.html#table-of-contents
 
+
+## Random features
+
+### Customizing font size and style
+___
+
+> Option 1: write HTML code
+
+`<h3 style="font-size:30px; color:red;"> 
+I am a colored header text (h3).
+</h3>
+
+<p style="
+    font-size:18px; 
+    font-family:'Papyrus';
+    text-align:center;">
+I am a body text. \
+But, I am centered text of a different font family and bigger size.
+</p>
+
+___
+
+> Option 2: use a style.css file
+
+```{r echo=TRUE, eval=FALSE}
+/* Whole document: */
+body {
+  font-family: Helvetica;
+  font-size: 16pt;
+}
+
+/* Headers */
+h3 {
+  font-size: 24pt;
+  color: maroon;
+}
+```
+
+
+### Allow users to leave comments/annotations
+
+```{r echo=TRUE, eval=FALSE}
+## Hypothesis annotations
+# Latest development version
+remotes::install_github("r-world-devs/hypothesis")
+hypothesis::useHypothesis()
+```
+
+
